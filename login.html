@@ -5,36 +5,89 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://bootswatch.com/5/cerulean/bootstrap.min.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="wrapper">
-        <div class="inner">
-            <div class="image-holder">
-                <img src="https://topshare.vn/wp-content/uploads/2021/01/Hinh-nen-dien-thoai-dep-va-doc-dao-1.jpg" alt="">
-            </div id="login">
-            <form action="">
-                <h3>Login</h3>
-                <div class="form-holder active">
-                    <input type="text" placeholder="Username" class="form-control">
-                </div>
-                <div class="form-holder">
-                    <input type="password" placeholder="Password" class="form-control" style="font-size: 15px;">
-                </div>
-                <div class="checkbox">
-                    <label>
-                        <input type="checkbox" checked> Remember Me
-                        <span class="checkmark"></span>
-                    </label>
-                </div>
-                <div class="form-login">
-                    <button>Login</button>
-                    <p>Don't have an account? <a href="#">Sign up</a></p>
-                </div>
+    <div class="container">
+
+        <section class="login">
+            <div class="logo">
+                <h1>LOGIN</h1>
+                <!-- <img src="image\logo.png" alt=""> -->
+            </div>
+
+            <form>
+
+                <input type="text" class="form-control" placeholder="UserName">
+                <input type="text" class="form-control" placeholder="Password">
+
+                <input type="submit" value="Login" class="bg-primary">
+
+                <p>You don't have an acccount? <a href="#" onclick="change()">SignUp</a></p>
+                
+
             </form>
+            
+        </section>
+
+        
+
+
+    </div>
+    <!-- SignUp -->
+    <div class="container1">
+
+        <section class="signup">
+            <div class="logo">
+                <h1>SIGNUP</h1>
+                <!-- <img src="image\logo.png" alt=""> -->
+            </div>
+
+            <form>
+                <input type="text" class="form-control" placeholder="UserName">
+                <input type="text" class="form-control" placeholder="Mail">
+                <input type="text" class="form-control" placeholder="Password">
+                <input type="text" class="form-control" placeholder="Confirm Password">
+
+                <input type="submit" value="Sign Up" class="bg-primary">
+
+                <p>You have an acccount? <a href="#" onclick="change()">Login</a></p>
+                
+
+            </form>
+            
+        </section>
+
+        <div class="empty">
+            <div class="empty1">
+                <div class="content">
+                    <h1>HELLO!</h1>
+                    <p>We are happy to see you again</p>
+                </div>
+            </div>
+        
+            <div class="empty2">
+                <div class="content">
+                    <h1>WELCOME!</h1>
+                    <p>Register and enjoy our benefits</p>
+                </div>
+            </div>
         </div>
     </div>
-    <script src="js/jquery-3.3.1.min.js"></script>
-		<script src="js/main.js"></script>
+
+    <script>
+        function change() {
+            var e= document.querySelector('.container');
+            e.classList.toggle('active');
+
+            var e= document.querySelector('.container1');
+            e.classList.toggle('active');
+
+
+        }
+    </script>
 </body>
 </html>
