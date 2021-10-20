@@ -9,13 +9,14 @@
     <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <div class="container">
-
+       
         <section class="login">
             <div class="logo">
-                <h1>LOGIN</h1>
+                <h1>SIGNIN</h1>
                 <!-- <img src="image\logo.png" alt=""> -->
             </div>
 
@@ -24,7 +25,7 @@
                 <input type="text" class="form-control" placeholder="UserName">
                 <input type="text" class="form-control" placeholder="Password">
 
-                <input type="submit" value="Login" class="bg-primary">
+                <input type="submit" value="Login" class="btn">
 
                 <p>You don't have an acccount? <a href="#" onclick="change()">SignUp</a></p>
                 
@@ -52,15 +53,15 @@
                 <input type="text" class="form-control" placeholder="Password">
                 <input type="text" class="form-control" placeholder="Confirm Password">
 
-                <input type="submit" value="Sign Up" class="bg-primary">
+                <input type="submit" value="Sign Up" class="btn">
 
-                <p>You have an acccount? <a href="#" onclick="change()">Login</a></p>
+                <p>You have an acccount? <a href="#" onclick="change()">SignIn</a></p>
                 
 
             </form>
             
         </section>
-
+        
         <div class="empty">
             <div class="empty1">
                 <div class="content">
@@ -79,6 +80,8 @@
     </div>
 
     <script>
+
+
         function change() {
             var e= document.querySelector('.container');
             e.classList.toggle('active');
@@ -89,5 +92,6 @@
 
         }
     </script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </body>
 </html>

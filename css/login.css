@@ -76,15 +76,17 @@
       color: #fff;
       border: none;
       border-radius: 20px;
+    background-color: teal;
   }
 
-.bg-primary:hover {
+.btn:hover {
    opacity: 70%;
 }
    
 
   p{
       margin: -1rem 3rem;
+
   }
   
   .empty1{
@@ -93,7 +95,7 @@
       position: absolute;
       top: 0;
       left: 0;
-      background-color: orange;
+      background-color: #f87966;
       z-index: -2000;
       transition: 1s ease-in-out;
   }
@@ -150,5 +152,9 @@
       color: white;
       -webkit-text-stroke-color: #fff;
   }
-  
+
+  form a{
+      color: teal;
+  }
+
  
